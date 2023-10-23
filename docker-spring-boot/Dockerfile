@@ -4,6 +4,8 @@
 # For Java 11, try this
 FROM adoptopenjdk/openjdk11:alpine-jre
 
+RUN apk --no-cache add curl
+
 # Refer to Maven build -> finalName
 ARG JAR_FILE=target/spring-boot-web.jar
 
